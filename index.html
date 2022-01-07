@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator instalacji fotowoltaicznej</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h2>Kalkulator instalacji fotowoltaicznej</h2>
+        </header>
+        <div id="tresc">
+            <p><b>Instalacja fotowoltaiczna</b> służy do produkcji energii elektrycznej. Źródłem energii jest energia
+                promieniowania słonecznego - ogólnodostępna, niewyczerpalna i ekologiczna, nie ingerująca w środowisko.
+
+                Każda instalacja składa się z modułów fotowoltaicznych montowanych na dachu budynku lub obok budynku i
+                falownika. Falownik to urządzenie, które przemienia prąd stały, który produkują moduły na prąd
+                przemienny, który możemy wykorzystać w gospodarstwie domowym lub oddać go do sieci.</p><br>
+            <p>
+                <b>Instalacja fotowoltaiczna</b> może oddawać energię do sieci, a może też pracować niezależnie od
+                sieci. Wtedy
+                wymagane jest wyposażenie instalacji w akumulatory energii, co ze względu na koszty akumulatorów jest
+                rozwiązaniem stosowanym bardzo rzadko. Dzisiaj, dzięki obowiązującej ustawie o odnawialnych źródłach
+                energii, akumulatorem energii może być sieć energetyczna, dlatego własnie instalacje sieciowe są
+                najczęściej wybieranym typem instalacji. Po pierwsze dlatego, że ze względu na brak konieczności zakupu
+                akumulatorów są tańsze, po drugie, bez dodatkowych kosztów wyprodukowaną energie można magazynować w
+                sieci.
+            </p>
+        </div>
+        <section>
+            <img src="panele.jpg" alt="panele fotowoltaiczne">
+            <div class="kontener_kalkulator">
+                <form action="" id="kalkulator">
+                    <div>
+                        <span>Województwo:</span>
+                        <select name="wojewodztwo" id="woj">
+                            <option label="dolnośląskie" value="3">dolnośląskie</option>
+                            <option label="kujawsko-pomorskie" value="4">kujawsko-pomorskie</option>
+                            <option label="lubelskie" value="6">lubelskie</option>
+                            <option label="lubuskie" value="7">lubuskie</option>
+                            <option label="łódzkie" value="5">łódzkie</option>
+                            <option label="małopolskie" value="1">małopolskie</option>
+                            <option label="mazowieckie" value="8">mazowieckie</option>
+                            <option label="opolskie" value="9">opolskie</option>
+                            <option label="podkarpackie" value="10">podkarpackie</option>
+                            <option label="podlaskie" value="11">podlaskie</option>
+                            <option label="pomorskie" value="12">pomorskie</option>
+                            <option label="śląskie" value="2">śląskie</option>
+                            <option label="świętokrzyskie" value="13">świętokrzyskie</option>
+                            <option label="warmińsko-mazurskie" value="14">warmińsko-mazurskie</option>
+                            <option label="wielkopolskie" value="15">wielkopolskie</option>
+                            <option label="zachodniopomorskie" value="16">zachodniopomorskie</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>Okres jaki pokrywa rachunek za energię:</span>
+                        <select name="" id="okres">
+                            <option value="1">miesiąc</option>
+                            <option value="2">dwa miesiące</option>
+                            <option value="3">rok</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>Zużycie energii elektrycznej w wybranym okresie:</span>
+                        <span class="kWh">
+                            <input type="number" min="0" id="zuzycie">
+                            <span>kWh</span>
+                        </span>
+                    </div>
+                    <button type="button" onclick="wypiszMoc()">Oblicz</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>Tomasz Rybczyński s22630</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

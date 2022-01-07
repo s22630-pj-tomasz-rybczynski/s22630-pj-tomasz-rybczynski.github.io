@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: #56d9dd;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #F4DC4F;
+}
+
+footer {
+    text-align: center;
+    background-color: #e7cf43;
+    padding: 10px;
+}
+
+#tresc > p {
+    width: 50%;
+}
+
+@media (max-width: 700px) {
+    nav > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    #tresc > p {
+        width: 90%;
+    }
+}
+
+section {
+    display: flex;
+    background-color: #67F1F5;
+}
+
+section > * {
+    flex: 1;
+}
+
+.kontener_kalkulator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+#kalkulator {
+    display: flex;
+    flex-direction: column;
+}
+
+#kalkulator > div {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+#kalkulator > div > * {
+    display: block;
+    flex: 50%;
+}
+
+select,
+input {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid yellowgreen;
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    line-height: 1;
+    margin: 20px;
+    padding: 16px 24px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: 700;
+    border-color: yellowgreen;
+    color: #000;
+    background-image: linear-gradient(45deg, yellowgreen 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+}
+
+button:hover {
+    background-position: 0;
+}
+
+.kWh {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.kWh input {
+    flex: 50%;
+}
+
+.kWh span {
+    flex: 0;
+    display: block;
+}
+
+#tresc {
+    background-color: #67b5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 70vh;
+}
